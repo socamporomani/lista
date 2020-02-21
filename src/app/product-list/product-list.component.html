@@ -1,14 +1,23 @@
 <h2>Products</h2>
+<div *ngFor="let product of products">
+
+  <li *ngIf=!product.comprado>
+    <button (click)="metodo(product)" >
+    <h4>
+      {{ product.name }}
+    </h4>
+    </button>
+  </li>
+</div>
+<h2>Products mercados</h2>
 
 <div *ngFor="let product of products">
+  <li *ngIf=product.comprado>
     <h4>
-      {{ product.name }} 
-  </h4>
-<h5>
-
-      <u>{{product.description}}</u>
-
-
-</h5>
+      <button>{{ product.name }}
+        <br>
+      </button>
+    </h4>
+  </li>
 </div>
 
