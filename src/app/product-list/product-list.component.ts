@@ -18,6 +18,7 @@ export class ProductListComponent {
 product.comprado = !product.comprado;
   }
 
+
 }
 
 

@@ -14,7 +14,7 @@
 <div *ngFor="let product of products">
   <li *ngIf=product.comprado>
     <h4>
-      <button>{{ product.name }}
+      <button (click)="metodo(product)">{{ product.name }}
         <br>
       </button>
     </h4>
